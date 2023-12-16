@@ -10,12 +10,23 @@ function App() {
 
   const addValue=()=>{
     // counter= counter+1
-    if(counter<20 ){
-     
-      setCounter(counter+1);
+    // if(counter<20 ){
+      // setCounter(counter+1);
+      // setCounter(counter+1);
+      // setCounter(counter+1);
+      // setCounter(counter+1); === in sb se only one value update hogi jo ek baar hogi ex initial 10 h to ye 11 karega bs 
+
+
+      setCounter(prevCounter=>prevCounter+1);
+      setCounter(prevCounter=>prevCounter+1);
+      setCounter(prevCounter=>prevCounter+1);
+      setCounter(prevCounter=>prevCounter+1);
+      //  in sb se jitni baar ye h unti baar value update ho kr aayegi jaise ex 10 or ye 4 baar h to seedhe 14 ho jaayegi 
+
+      // dono ko chal k dekh lo jyada clear hoga 
       
 
-    }
+    // }
    
 
     // console.log("value added", counter);
@@ -24,10 +35,10 @@ function App() {
 
   const removeValue= ()=>{
 
-    if(counter>0){
+    // if(counter>0){
       setCounter(counter-1)
 
-    }
+    // }
     
   }
 
